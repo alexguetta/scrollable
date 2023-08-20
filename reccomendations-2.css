@@ -1,0 +1,283 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  direction: rtl;
+  --basic-color-1: #9CDDD7;
+  --basic-color-2: #16796F;
+  --basic-color-3: #5271FF;
+  --basic-color-4: #6581FF;
+  --color-used-atm: var(--basic-color-2);
+  background-color: var(--color-used-atm);
+  font-family: Antonio;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(var(--color-used-atm), lightblue, var(--color-used-atm));
+}
+
+header { 
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 85%;
+}
+
+.nav-1,
+.nav-2 {
+  position: relative;
+}
+
+.presentation {
+  text-align: center;
+  width: 85%;
+  margin-bottom: 4rem;
+  font-size: 380%;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-size: 550%;
+  margin: 0;
+  padding: 0;
+}
+
+#picture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.picture,
+.picture-2 {
+  width: 80%;
+  border-radius: 30px;
+}
+
+.picture {
+  z-index: 2;
+  /*box-shadow: 1rem 1rem rgba(255,255,255,0.8);*/
+}
+
+.picture-2 {
+  opacity: 0.15;
+  position: absolute;
+  bottom: -1rem;
+  right: 5rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.title-reccomend {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+}
+
+.name {
+  font-weight: 600;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+#big-container {
+  display: flex;
+  overflow-x: hidden;
+  display: flex;
+  scroll-behavior: smooth;
+  align-items: center;
+  direction: rtl;
+}
+
+#phone-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  scroll-behavior: smooth;
+}
+
+#phone-a:active {
+  background-color: lightgrey;
+}
+
+.title-reccomend {
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+  margin: 0;
+}
+
+.name {
+  font-weight: 600;
+}
+
+#reccomend-container {
+  opacity: 1;
+  box-shadow: 1rem 1rem rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: white;
+  color: var(--color-used-atm);
+  width: 84rem;
+  margin: 0 10rem 1rem;
+  overflow: hidden;
+}
+
+.middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.middle-container-hidden {
+  transform: translateX(-200%);
+}
+
+#reccomend-text {
+  font-size: 360%;
+  text-align: center;
+  width: 90%; 
+  min-height: 30px;
+  direction: rtl;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  position: absolute;
+  top: 55%;
+  width: 7rem;
+  cursor: pointer;
+  z-index: 8;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem rgba(255,255,255,0.8);
+}
+
+.pre-btn {
+  display: none;
+  right: 1.5rem;
+}
+
+.nxt-btn {
+  left: 1.5rem;  
+  transform: rotate(180deg);
+}
+
+.arrow {
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+  brightness(91%) contrast(97%);
+  width: 4.5rem;
+}
+
+#details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details p {
+  font-size: 350%;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  height: 7%;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#whatsapp-img,
+#tel-img {
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+  brightness(91%) contrast(97%);
+}
+
+#whatsapp-img {
+  width: 6rem;
+  height: 6rem;
+}
+
+#tel-img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#whatsapp-button,
+#tel-button {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 5rem;
+  border: none;
+  margin: 1rem;
+}
+
+#logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-logo {
+  width: 80%;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(20%);
+}
+
+/*@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}*/
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
