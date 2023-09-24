@@ -118,20 +118,6 @@ header {
   direction: rtl;
 }
 
-#phone-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 100px;
-  scroll-behavior: smooth;
-}
-
-#phone-a:active {
-  background-color: lightgrey;
-}
-
 .title-reccomend {
   display: flex;
   justify-content: center;
